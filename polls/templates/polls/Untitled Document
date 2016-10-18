@@ -1,0 +1,9 @@
+{% if ult_temperatura %}
+    <ul>
+    {% for dados in ult_temperatura %}
+        <li><a href="/polls/{{ dados.id }}/">{{ dados.temperatura }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p> Sem Registros.</p>
+{% endif %}
